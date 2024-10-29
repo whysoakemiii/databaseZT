@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Body styling with gradient background */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(135deg, #290ca3, #5200ff);
+      }
+      
+      /* Centering and styling the login box */
+      .login-box {
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+      
+      /* Heading styling */
+      .login-box h1 {
+        margin-bottom: 20px;
+        color: #4b0082;
+        font-size: 24px;
+      }
+      
+      /* Form label and input field styling */
+      .login-box label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        color: #4b0082;
+        font-weight: bold;
+      }
+      
+      .login-box input[type="text"],
+      .login-box input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      /* Submit button styling */
+      .login-box input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4b0082;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      
+      .login-box input[type="submit"]:hover {
+        background-color: #37006b;
+      }
+      
+      /* Additional paragraph styling */
+      .para-2 {
+        margin-top: 10px;
+        font-size: 14px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+      }
+      
+      .para-2 a {
+        color: #4b0082;
+        text-decoration: none;
+      }
+      
+      .para-2 a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-box">
+      <h1>Login</h1>
+      <form action="get.php" method="get">
+        <label>Username</label>
+        <input type="text" name="Uname" placeholder="Enter your username" />
+        
+        <label>Password</label>
+        <input type="password" name="pwd" placeholder="Enter your password" />
+        <a href="dashBoard.html">Login
+        <input type="submit" value="Login"/></a>
+      </form>
+      <p class="para-2">
+        Not have an account? <a href="signup.html">Sign Up Here</a>
+      </p>
+    </div>
+    
+  </body>
+</html>
